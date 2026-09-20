@@ -1,0 +1,230 @@
+/* =========================
+   GENERAL
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    background: #ffffff;
+    color: #222222;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+   ========================= */
+
+.container {
+    width: min(850px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+.header {
+    text-align: center;
+
+    padding-top: 90px;
+    padding-bottom: 80px;
+}
+
+.header h1 {
+    margin: 0;
+
+    font-size: 3.2rem;
+    font-weight: normal;
+    letter-spacing: -1px;
+}
+
+.subtitle {
+    margin-top: 5px;
+    margin-bottom: 30px;
+
+    color: #666666;
+
+    font-size: 1.15rem;
+}
+
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 25px;
+}
+
+nav a {
+    color: #444444;
+    text-decoration: none;
+
+    font-size: 0.95rem;
+}
+
+nav a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+
+/* =========================
+   SECTIONS
+   ========================= */
+
+section {
+    padding: 70px 0;
+
+    border-top: 1px solid #dddddd;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 35px;
+
+    font-size: 1.7rem;
+    font-weight: normal;
+}
+
+p {
+    margin-top: 0;
+}
+
+
+/* =========================
+   PROJECT ITEMS
+   ========================= */
+
+.item {
+    margin-bottom: 50px;
+}
+
+.item:last-child {
+    margin-bottom: 0;
+}
+
+.item h3 {
+    margin: 0 0 5px;
+
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+.meta {
+    margin-bottom: 15px;
+
+    color: #777777;
+
+    font-size: 0.9rem;
+}
+
+.item p {
+    max-width: 700px;
+}
+
+
+/* =========================
+   LINKS
+   ========================= */
+
+a {
+    color: #333333;
+}
+
+.project-link {
+    display: inline-block;
+
+    margin-top: 5px;
+
+    color: #333333;
+    text-decoration: none;
+
+    font-size: 0.95rem;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+.links {
+    display: flex;
+    gap: 25px;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    padding: 40px 0 60px;
+
+    color: #888888;
+
+    text-align: center;
+
+    font-size: 0.85rem;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: min(100% - 30px, 850px);
+    }
+
+    .header {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    section {
+        padding: 50px 0;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
