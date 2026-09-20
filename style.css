@@ -1,7 +1,4 @@
-/* =========================
-   GENERAL
-   ========================= */
-
+```css
 * {
     box-sizing: border-box;
 }
@@ -12,112 +9,81 @@ html {
 
 body {
     margin: 0;
-
     background: #ffffff;
     color: #222222;
 
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
-    line-height: 1.7;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.6;
 }
 
-
-/* =========================
-   MAIN CONTAINER
-   ========================= */
-
 .container {
-    width: min(850px, calc(100% - 40px));
+    width: min(720px, calc(100% - 40px));
     margin: 0 auto;
 }
 
 
-/* =========================
-   HEADER
-   ========================= */
+/* Header */
 
 .header {
     text-align: center;
-
-    padding-top: 90px;
-    padding-bottom: 80px;
+    padding: 55px 0 45px;
 }
 
 .header h1 {
     margin: 0;
 
-    font-size: 3.2rem;
+    font-size: 2.6rem;
     font-weight: normal;
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
 }
 
 .subtitle {
-    margin-top: 5px;
-    margin-bottom: 30px;
+    margin: 2px 0 20px;
 
-    color: #666666;
-
-    font-size: 1.15rem;
+    color: #666;
+    font-size: 1rem;
 }
-
-
-/* =========================
-   NAVIGATION
-   ========================= */
 
 nav {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-
-    gap: 25px;
+    gap: 22px;
 }
 
 nav a {
-    color: #444444;
+    color: #444;
     text-decoration: none;
-
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
 nav a:hover {
-    color: #000000;
+    color: #000;
     text-decoration: underline;
 }
 
 
-/* =========================
-   SECTIONS
-   ========================= */
+/* Sections */
 
 section {
-    padding: 70px 0;
-
-    border-top: 1px solid #dddddd;
+    padding: 30px 0;
 }
 
 h2 {
-    margin-top: 0;
-    margin-bottom: 35px;
+    margin: 0 0 18px;
 
-    font-size: 1.7rem;
+    font-size: 1.45rem;
     font-weight: normal;
 }
 
 p {
-    margin-top: 0;
+    margin: 0 0 14px;
 }
 
 
-/* =========================
-   PROJECT ITEMS
-   ========================= */
+/* Research / Writing items */
 
 .item {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .item:last-child {
@@ -125,54 +91,43 @@ p {
 }
 
 .item h3 {
-    margin: 0 0 5px;
+    margin: 0 0 2px;
 
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-weight: normal;
 }
 
 .meta {
-    margin-bottom: 15px;
+    margin-bottom: 8px;
 
-    color: #777777;
-
-    font-size: 0.9rem;
+    color: #777;
+    font-size: 0.85rem;
 }
 
 .item p {
-    max-width: 700px;
-}
-
-
-/* =========================
-   LINKS
-   ========================= */
-
-a {
-    color: #333333;
+    max-width: 680px;
 }
 
 .project-link {
-    display: inline-block;
-
-    margin-top: 5px;
-
-    color: #333333;
+    color: #333;
     text-decoration: none;
-
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
 .project-link:hover {
     text-decoration: underline;
 }
 
+
+/* Contact */
+
 .links {
     display: flex;
-    gap: 25px;
+    gap: 22px;
 }
 
 .links a {
+    color: #333;
     text-decoration: none;
 }
 
@@ -181,50 +136,40 @@ a {
 }
 
 
-/* =========================
-   FOOTER
-   ========================= */
+/* Footer */
 
 footer {
-    padding: 40px 0 60px;
+    padding: 30px 0 45px;
 
-    color: #888888;
-
+    color: #888;
     text-align: center;
-
-    font-size: 0.85rem;
+    font-size: 0.8rem;
 }
 
 
-/* =========================
-   MOBILE
-   ========================= */
+/* Mobile */
 
 @media (max-width: 600px) {
 
     .container {
-        width: min(100% - 30px, 850px);
+        width: min(100% - 30px, 720px);
     }
 
     .header {
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding: 40px 0 35px;
     }
 
     .header h1 {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
 
     nav {
         gap: 15px;
+        flex-wrap: wrap;
     }
 
     section {
-        padding: 50px 0;
-    }
-
-    .links {
-        flex-direction: column;
-        gap: 5px;
+        padding: 25px 0;
     }
 }
+```
